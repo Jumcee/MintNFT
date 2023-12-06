@@ -1,3 +1,3 @@
-Creatinhg as much NFT as i want on Ethereum. 
+Creating and deploying an ERC-721 smart contract on the Sepolia test network using Metamask, Solidity, Hardhat, Pinata and Alchemy.
 
-Writing and deploying a Non Fungible (ERC721) Token smart contract using Ethereum and Inter Planetary File System (IPFS).
+This walk us through how we can use our smart contract to mint an NFT from code, and in the next part we'll cover how to View our NFT in our Mobile Wallet.
