@@ -12,7 +12,7 @@ const signer = new ethers.Wallet(privateKey, provider)
 
 // Get contract ABI and address
 const abi = contract.abi
-const contractAddress = '0x359451AC3C73827A7653C0Ab7D30243844a55447'
+const contractAddress = '0xe34c86A03F17E29F77beeE7c898Adae4dD578006'
 
 // Create a contract instance
 const myNftContract = new ethers.Contract(contractAddress, abi, signer)
@@ -25,7 +25,7 @@ const tokenUri = "https://gateway.pinata.cloud/ipfs/QmWmvTJmJU3pozR9ZHFmQC2DNDwi
 const mintNFT = async () => {
     let nftTxn = await myNftContract.mintNFT(signer.address, tokenUri)
     await nftTxn.wait()
-    console.log(`NFT Minted! Check it out at: https://sepolia.etherscan.io/tx/QmbzZFujBL7xBiPY4PyzDNusN61oYX8e52mYES4HT93qxT`)
+    console.log(`NFT Minted! Check it out at: https://sepolia.etherscan.io/tx/${nftTxn.hash}`)
 }
 
 mintNFT()
