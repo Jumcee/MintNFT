@@ -19,7 +19,7 @@ const myNftContract = new ethers.Contract(contractAddress, abi, signer)
 console.log(abi.find((item) => item.name === 'mintNFT'));
 
 // Get the NFT Metadata IPFS URL
-const tokenUri = "https://gateway.pinata.cloud/ipfs/QmWmvTJmJU3pozR9ZHFmQC2DNDwi2XJtf3QGyYiiagFSWb"
+const tokenUri = "https://gateway.pinata.cloud/ipfs/QmTuKZNLMwRh6bwE9GzRmbHrHdYTkfPmqehNJEeaDt9G23"
 
 // Call mintNFT function
 const mintNFT = async () => {
